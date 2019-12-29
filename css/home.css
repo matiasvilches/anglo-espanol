@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap');
+
+:root {
+    --celeste: #C2DDE6;
+    --rosado-claro: #E1C5CD;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    /* background-color: ghostwhite; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.options {
+    background-image: -webkit-linear-gradient(180deg, var(--rosado-claro) 50%, var(--celeste) 50%);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
+    .options {
+        background-image: -webkit-linear-gradient(90deg, var(--rosado-claro) 50%, var(--celeste) 50%);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+
+/* Card effect */
+* {
+    transition: all 0.3s ease-out;
+}
+
+.card-effect {
+    display: block;
+    top: 0px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.card-effect:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.card-effect:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+}
+
+.card-effect:hover:before {
+    transform: scale(2.15);
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #00838d;
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+}
+
+
+
+/* .text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+} */
+

@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500&display=swap');
+
+:root {
+    --celeste: #C2DDE6;
+    --rosado-claro: #E1C5CD;
+    
+}
+
+html {
+    height: auto;
+    min-height: 100vh;
+}
+
+body {
+    /* background-color: #f1f2f6; */
+    /* background: linear-gradient(to bottom right, #E1C5CD, #B1E9D3); */
+    
+    background-image: -webkit-linear-gradient(60deg, var(--rosado-claro) 50%, var(--celeste) 50%);
+    /* background-color: var(--celeste); */
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    max-width: 688px;
+}
+
+.progress {
+    max-width: 688px;
+}
+
+#txtResponse {
+    max-width: 297px;
+}
+
+.table {
+    margin: auto;
+    width: fit-content;
+}
+
+@media screen and (max-width: 375px) {
+    .table-responsive {
+        width: 100%;
+    }
+}
